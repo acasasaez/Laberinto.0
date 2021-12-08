@@ -13,11 +13,11 @@ class Pen (turtle.Turtle):
         self.speed(0)
 
 laberinto = []
-laberinto_1 = ["XXXXX",
-               "XXXXX",
-               "XXXXX",
-               "XXXXX",
-               "XXXXX"]
+laberinto_1 = [" XXXX",
+               " X   ",
+               " X X ",
+               "   X ",
+               "XXXX "]
 laberinto.append(laberinto_1)
 def iniciar_lab(laberinto):
     for file in range (len(laberinto)):
@@ -29,3 +29,4 @@ def iniciar_lab(laberinto):
                 pen.goto (screen_x, screen_y)
                 pen.stamp()
 pen = Pen()
+iniciar_lab(laberinto[0])
